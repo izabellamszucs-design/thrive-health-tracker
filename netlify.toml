@@ -1,6 +1,7 @@
 [build]
-  command = "cd client && npx pnpm install && npx pnpm run build"
-  publish = "client/dist"
+  base = "client"
+  command = "npx pnpm install && npx pnpm run build"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
