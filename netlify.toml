@@ -1,3 +1,6 @@
 [build]
-  command = "pnpm install && pnpm --filter client run build"
+  command = "pnpm --filter client run build"
   publish = "client/dist"
+
+[build.environment]
+  NETLIFY_USE_PNPM = "true"
