@@ -1,4 +1,3 @@
 [build]
-  base = "client"
-  command = "pnpm install && pnpm run build"
-  publish = "dist"
+  command = "pnpm install && pnpm --filter client run build"
+  publish = "client/dist"
